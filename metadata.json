@@ -1,0 +1,6 @@
+{
+  "name": "RPG어드벤처",
+  "description": "사용자가 자신의 시나리오를 가져올 수 있는 텍스트 및 차트 기반 RPG입니다. NPC 대화는 가져온 스크립트를 기반으로 합니다.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

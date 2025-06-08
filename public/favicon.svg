@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 검 모양 배경 -->
+  <rect width="32" height="32" rx="6" fill="#1e293b"/>
+  
+  <!-- 검 모양 -->
+  <path d="M23 8L12 19L9 16L20 5L23 8Z" fill="#f8fafc"/>
+  <path d="M9 16L7 22L12 19L9 16Z" fill="#f8fafc"/>
+  
+  <!-- 칼자루 부분 -->
+  <rect x="20" y="5" width="6" height="3" rx="1" fill="#f97316"/>
+</svg> 
