@@ -4,7 +4,7 @@
 ## 소개
 
 RPG어드벤처는 사용자가 자신만의 시나리오를 가져와 플레이할 수 있는 텍스트 및 차트 기반의 JRPG 엔진입니다. 
-기본으로 등록된 시나리오인 사이버펑크 조선 (Cyberpunk Joseon JRPG)은 RPG스크립트에디터(https://rpg-script-editor.vercel.app/)를 이용해 생성한 시나리오입니다.
+기본으로 등록된 시나리오인 사이버펑크 조선 (Cyberpunk Joseon JRPG)은 RPG스크립트에디터(https://rpg-script-editor.vercel.app) 를 이용해 생성한 시나리오입니다.
 플레이어는 기본 시나리오 외에 RPG스크립트에디터로 생성한 JSON 형식의 스크립트를 통해 자신만의 모험을 만들어 사용할 수 있습니다.
 
 실행 주소 : https://dev-canvas-pi.vercel.app/
