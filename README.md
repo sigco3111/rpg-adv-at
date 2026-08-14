@@ -4,10 +4,14 @@
 ## 소개
 
 RPG어드벤처는 사용자가 자신만의 시나리오를 가져와 플레이할 수 있는 텍스트 및 차트 기반의 JRPG 엔진입니다. 
-기본으로 등록된 시나리오인 사이버펑크 조선 (Cyberpunk Joseon JRPG)은 RPG스크립트에디터(https://rpg-script-editor.vercel.app) 를 이용해 생성한 시나리오입니다.
+기본으로 등록된 시나리오인 사이버펑크 조선 (Cyberpunk Joseon JRPG)은 RPG스크립트에디터(https://sigco3111.github.io/rpg-script-editor/) 를 이용해 생성한 시나리오입니다.
 플레이어는 기본 시나리오 외에 RPG스크립트에디터로 생성한 JSON 형식의 스크립트를 통해 자신만의 모험을 만들어 사용할 수 있습니다.
 
-실행 주소 : https://dev-canvas-pi.vercel.app/
+라이브 데모 : https://sigco3111.github.io/rpg-adv-at/
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-222222?style=for-the-badge&logo=githubpages)](https://sigco3111.github.io/rpg-adv-at/)
+
+> **참고**: AI 콘텐츠 생성은 Google Gemini API 키가 필요합니다 (`process.env.GEMINI_API_KEY`). 키가 없으면 AI 기능은 비활성화되며, 턴제 전투/캐릭터 성장/아이템 관리/스크립트 임포트/차트 시각화 등 핵심 기능은 정상 작동합니다.
 
 ## 주요 기능
 
@@ -67,9 +71,32 @@ RPG어드벤처는 사용자가 자신만의 시나리오를 가져와 플레이
 └── README.md                   # 프로젝트 설명 파일
 ```
 
+## 🚀 배포 (Deployment)
+
+이 저장소는 GitHub Actions 또는 수동 gh-pages 브랜치 푸시로 배포됩니다. `vite.config.ts`에 `base: '/rpg-adv-at/'`가 박혀 있어 빌드 결과가 gh-pages 서브경로에서 정상 작동합니다.
+
+```bash
+npm install
+npm run build
+npx gh-pages -d dist
+```
+
+---
+
 ## 시작하기
 
-이 애플리케이션은 웹 브라우저에서 직접 실행되도록 설계되었습니다. 별도의 빌드 과정이나 서버 설정이 필요하지 않습니다.
+### GitHub Pages 빌드 (정식)
+
+```bash
+npm install
+npm run dev          # http://localhost:5173
+npm run build        # vite build → dist/
+npm run preview      # serve dist/
+```
+
+### 정적 서버로 직접 실행 (개발/테스트용)
+
+이 프로젝트는 esm.sh CDN 의존성으로 빌드 없이도 작동합니다. 로컬에서 빠르게 실행하려면:
 
 1.  **파일 다운로드**: 프로젝트의 모든 파일을 다운로드합니다.
 2.  **`index.html` 실행**: 다운로드한 폴더에서 `index.html` 파일을 웹 브라우저로 엽니다. (예: 파일을 브라우저 창으로 드래그 앤 드롭하거나, 로컬 웹 서버를 통해 제공)
